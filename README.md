@@ -6,7 +6,7 @@ I am an active contributor to this project, and my primary responsibility was th
 
 My contributions include:
 - Research on dynamic behavior of high-speed elevators
-- Mathematical modeling of elevator vibration systems
+- Dynamic modeling of elevator vibration systems
 - MATLAB-based simulation and analysis
 - Interpretation of vibration results for ride comfort and safety
 
@@ -17,8 +17,8 @@ High-speed elevators are critical vertical transportation systems in high-rise a
 At such speeds, mechanical vibrations significantly influence passenger comfort, system stability, and structural safety.
 
 This project focuses on:
-- Understanding the source of vibrations
-- Developing dynamic models
+- Understanding the physical sources of vibrations
+- Developing suitable dynamic modeling approaches
 - Simulating vibration responses using MATLAB
 - Identifying parameters for vibration reduction
 
@@ -41,25 +41,17 @@ Horizontal vibrations occur due to interaction between the elevator car, guide r
 - Transmission of building sway through rail brackets  
 
 ### Dynamic Modeling
-- Elevator car modeled as a rigid body with lateral translation and yaw rotation
-- Guide shoes represented as spring–damper elements
-- Guide rails modeled as Euler–Bernoulli beams
-- Car–rail interaction treated as a coupled dynamic system
-
-### Mathematical Representation
-The horizontal vibration system is expressed as:
-
-
-where:
-- `M` – Mass matrix  
-- `C` – Damping matrix  
-- `K` – Stiffness matrix  
+- The elevator car is modeled as a rigid body with dominant lateral translation and yaw motion.
+- Guide shoes are represented using equivalent spring–damper elements to capture contact stiffness and energy dissipation.
+- Guide rails are modeled as flexible structural members influenced by building motion.
+- The interaction between the car and guide rails is treated as a coupled dynamic system.
+- System response is evaluated using numerical simulation techniques.
 
 ### MATLAB Implementation
-- Definition of system matrices (M, C, K)
-- Eigenvalue analysis for natural frequencies
-- Time-domain response using numerical solvers
-- Parametric studies on stiffness, damping, and elevator speed
+- Definition of mass, stiffness, and damping parameters
+- Evaluation of system natural frequencies
+- Time-domain response analysis using numerical solvers
+- Parametric studies on guide stiffness, damping, and elevator speed
 
 ---
 
@@ -87,42 +79,36 @@ These components are connected through rope stiffness and damping, forming a non
 - Rope elasticity follows Hooke’s law
 - Only vertical motion is considered
 
-### Mathematical Formulation
-Equations of motion are derived using **Lagrange’s method**, incorporating:
-- Gravitational forces
-- Rope elastic and damping forces
-- Traction wheel dynamics
-
 ### MATLAB Simulation
-- Definition of physical parameters (mass, stiffness, damping)
-- Time-varying rope length modeling
+- Definition of physical parameters such as mass, stiffness, and damping
+- Inclusion of time-varying rope length effects
 - Numerical integration using ODE solvers
-- Analysis of acceleration and jerk for passenger comfort
+- Analysis of acceleration and jerk related to passenger comfort
 
 ---
 
 ## MATLAB Codes
 This repository includes MATLAB scripts for:
-- Parameter initialization
-- Mass–stiffness–damping matrix formulation
+- System parameter initialization
+- Dynamic model implementation
 - Eigenvalue and frequency analysis
 - Time-domain vibration response simulation
-- Frame vs passenger cabin acceleration comparison
+- Comparison between structural frame and passenger cabin response
 
 ---
 
 ## Optimization & Design Insights
-- Increasing damping reduces vibration amplitude
+- Increasing damping effectively reduces vibration amplitude
 - Proper guide shoe stiffness improves lateral stability
-- Vibration isolation reduces transmission to passenger cabin
-- Optimized parameters lead to smoother ride quality
+- Vibration isolation minimizes vibration transmission to the passenger cabin
+- Optimized dynamic parameters lead to smoother and safer ride quality
 
 ---
 
 ## Key Outcomes
 - Clear distinction between horizontal and vertical vibration mechanisms
-- Validated dynamic models using MATLAB simulations
-- Insights into vibration reduction for high-speed elevators
+- Validated modeling approaches through MATLAB simulations
+- Practical insights into vibration reduction for high-speed elevators
 - Improved understanding of ride comfort and safety constraints
 
 ---
