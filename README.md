@@ -1,3 +1,55 @@
+# High-Speed Elevator – Dynamic Analysis & MATLAB Simulation
+
+## About This Fork
+This repository is a fork of the **High-Speed-Elevator** project.  
+I am an active contributor to this project, and my primary responsibility was the **dynamic analysis of high-speed elevators**, with emphasis on **vibration behavior in skyscraper applications**.
+
+My contributions include:
+- Research on dynamic behavior of high-speed elevators
+- Mathematical modeling of elevator vibration systems
+- MATLAB-based simulation and analysis
+- Interpretation of vibration results for ride comfort and safety
+
+---
+
+## Project Overview
+High-speed elevators are critical vertical transportation systems in high-rise and supertall buildings, typically operating at speeds ranging from **5 m/s to over 20 m/s**.  
+At such speeds, mechanical vibrations significantly influence passenger comfort, system stability, and structural safety.
+
+This project focuses on:
+- Understanding the source of vibrations
+- Developing dynamic models
+- Simulating vibration responses using MATLAB
+- Identifying parameters for vibration reduction
+
+---
+
+## Types of Vibrations
+The vibration analysis is divided into two major categories:
+
+---
+
+## Horizontal Vibrations (Lateral Dynamics)
+
+### Background
+Horizontal vibrations occur due to interaction between the elevator car, guide rails, guide shoes, and building sway. These vibrations directly affect ride comfort and lateral stability.
+
+### Primary Causes
+- Guide rail misalignment or waviness  
+- Nonlinear stiffness and damping of guide shoes  
+- Uneven mass distribution in the elevator car  
+- Transmission of building sway through rail brackets  
+
+### Dynamic Modeling
+- Elevator car modeled as a rigid body with lateral translation and yaw rotation
+- Guide shoes represented as spring–damper elements
+- Guide rails modeled as Euler–Bernoulli beams
+- Car–rail interaction treated as a coupled dynamic system
+
+### Mathematical Representation
+The horizontal vibration system is expressed as:
+
+
 where:
 - `M` – Mass matrix  
 - `C` – Damping matrix  
