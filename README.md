@@ -1,8 +1,8 @@
 ## About This Fork
 
-This repository is a fork of the **Lam-Research-Challenge-2025** project.  
+This repository is a fork of the **High-Speed-Elevator** project.  
 I am an active contributor to this project, and my key responsibilities included:
 
-- **CAD design and 3D printing** of mechanical components and assemblies  
-- **Design and development of the manipulator arm end-effector**  
-- **Manufacturing, assembly, and overall hardware system integration**  
+- **Research about the dynamic analysis of high speed elevators used mainly for skyscrapers.  
+- **to do analysis and simulation using MATLAB**  
+
