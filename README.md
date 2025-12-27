@@ -113,11 +113,5 @@ This repository includes MATLAB scripts for:
 
 ---
 
-## Author Contribution
-**Anumula Bharath Kumar**  
-Dynamic analysis, vibration modeling, and MATLAB simulation for high-speed elevator systems.
-
----
-
 ## References
 Relevant research papers and technical references are provided in the project documentation.
