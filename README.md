@@ -25,7 +25,7 @@ This project focuses on:
 ---
 
 ## Types of Vibrations
-The vibration analysis is divided into two major categories:
+The vibration analysis in this project is divided into two major categories:
 
 ---
 
@@ -47,11 +47,16 @@ Horizontal vibrations occur due to interaction between the elevator car, guide r
 - The interaction between the car and guide rails is treated as a coupled dynamic system.
 - System response is evaluated using numerical simulation techniques.
 
-### MATLAB Implementation
-- Definition of mass, stiffness, and damping parameters
-- Evaluation of system natural frequencies
-- Time-domain response analysis using numerical solvers
-- Parametric studies on guide stiffness, damping, and elevator speed
+### MATLAB Simulation – Horizontal Vibrations
+MATLAB is used to simulate the lateral dynamic behavior of the elevator system using the following technical approach:
+
+- Formulation of lumped-parameter dynamic models for lateral motion
+- Assembly of mass, stiffness, and damping matrices representing car–guide interactions
+- Eigenvalue and modal analysis to evaluate natural frequencies and mode shapes
+- Time-domain response simulation using numerical ODE solvers such as `ode45`
+- Parametric studies on guide shoe stiffness, damping, and elevator speed
+- Visualization of lateral displacement, velocity, and acceleration responses using MATLAB plotting tools
+- Evaluation of ride comfort based on lateral acceleration levels
 
 ---
 
@@ -63,7 +68,7 @@ Horizontal vibrations occur due to interaction between the elevator car, guide r
 - Inertia of the car, counterweight, and traction wheel
 - Uneven rope tension and time-varying rope length
 
-Vertical vibrations are particularly severe during emergency braking conditions.
+Vertical vibrations are particularly severe during transient events such as emergency braking.
 
 ### Modeling Approach
 A **3-DOF lumped mass model** is used, consisting of:
@@ -79,21 +84,27 @@ These components are connected through rope stiffness and damping, forming a non
 - Rope elasticity follows Hooke’s law
 - Only vertical motion is considered
 
-### MATLAB Simulation
-- Definition of physical parameters such as mass, stiffness, and damping
-- Inclusion of time-varying rope length effects
-- Numerical integration using ODE solvers
-- Analysis of acceleration and jerk related to passenger comfort
+### MATLAB Simulation – Vertical Vibrations
+The vertical vibration behavior is analyzed in MATLAB using the following workflow:
+
+- Development of a lumped mass dynamic model incorporating rope elasticity and damping
+- Inclusion of time-varying rope length to capture non-stationary system behavior
+- Implementation of governing equations using MATLAB scripts and function files
+- Time-domain numerical integration using solvers such as `ode45` and `ode15s`
+- Simulation of acceleration and braking conditions, including emergency braking cases
+- Post-processing of results to analyze displacement, acceleration, and jerk
+- Comparative assessment of vibration levels between structural frame and passenger cabin
 
 ---
 
 ## MATLAB Codes
-This repository includes MATLAB scripts for:
+This repository contains MATLAB scripts and functions for:
 - System parameter initialization
-- Dynamic model implementation
+- Dynamic model implementation for horizontal and vertical vibrations
 - Eigenvalue and frequency analysis
 - Time-domain vibration response simulation
-- Comparison between structural frame and passenger cabin response
+- Parametric and comparative studies
+- Visualization of vibration characteristics
 
 ---
 
@@ -108,7 +119,7 @@ This repository includes MATLAB scripts for:
 ## Key Outcomes
 - Clear distinction between horizontal and vertical vibration mechanisms
 - Validated modeling approaches through MATLAB simulations
-- Practical insights into vibration reduction for high-speed elevators
+- Practical insights into vibration reduction strategies for high-speed elevators
 - Improved understanding of ride comfort and safety constraints
 
 ---
